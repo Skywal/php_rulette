@@ -26,8 +26,8 @@
                  if(($i % 2) == 0){
                    $cell_number += 1;
 
-                   echo "<td >
-                     <div class=\"number-cell\">
+                   echo "<td>
+                     <div class=\"number-cell\" id>
                      $cell_number
                      </div>
                    </td>";
