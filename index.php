@@ -9,6 +9,7 @@
 <body>
   <?php require_once 'blocks/header.php'; ?>
   <div class="container">
+    <form action="#" method="post" name="casino_form">
      <table class = "casino-table">
        <thead>
          <tr>
@@ -25,16 +26,34 @@
                  if(($i % 2) == 0){
                    $cell_number += 1;
 
-                   echo "<td>$cell_number</td>";
+                   echo "<td >
+                     <div class=\"number-cell\">
+                     $cell_number
+                     </div>
+                   </td>";
                  } else {
-                   echo "<td></td>";
+                   echo "<td>
+                     <div class=\"w-line-cell\">
+                     </div>
+                   </td>";
                  }
                }
              }else {
                echo "<tr>";
-               for($i = 1; $i < 8; $i++){
-                 echo "<td></td>";
+               for($i = 1; $i < 4; $i++){
+                 echo "<td>
+                   <div class=\"dot-cell\">
+                   </div>
+                 </td>";
+                 echo "<td>
+                   <div class=\"h-line-cell\">
+                   </div>
+                 </td>";
                }
+               echo "<td>
+                 <div class=\"dot-cell\">
+                 </div>
+               </td>";
                echo "</td>";
              }
 
@@ -43,6 +62,7 @@
          ?>
        </tbody>
      </table>
+   </form>
   </div>
   <?php require_once 'blocks/footer.php'; ?>
 </body>

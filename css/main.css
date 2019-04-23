@@ -8,12 +8,32 @@
     }
 }
 .casino-table  {
-  width: inherit;
+  width: 200px;
   background-color: green;
-
+  align-content: center;
 }
 .casino-table td{
   border-style: solid;
-  border-color: gray;
+  border-color: white;
   border-width: thin;
+}
+div{
+  color: white;
+}
+.number-cell{
+  width: 35px;
+  height: 35px;
+}
+.h-line-cell{
+  height: 5px;
+  width: auto;
+}
+.w-line-cell{
+  width: 5px;
+  height: auto;
+}
+.dot-cell{
+  width: 5px;
+  height: 5px;
+  background-color: red;
 }
