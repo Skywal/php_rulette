@@ -7,33 +7,39 @@
       margin: 20px 0;
     }
 }
+
 .casino-table  {
-  width: 200px;
+  /* width: 200px; */
   background-color: green;
-  align-content: center;
 }
 .casino-table td{
-  border-style: solid;
+  /* border-style: solid;
   border-color: white;
-  border-width: thin;
+  border-width: thin; */
+  align: center;
 }
-div{
+table div{
   color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .number-cell{
-  width: 35px;
-  height: 35px;
+  width: 50px;
+  height: 50px;
+}
+.line-cell{
+  background-color: red;
 }
 .h-line-cell{
-  height: 5px;
-  width: auto;
+  height: 8px;
+  width: 50px;
 }
 .w-line-cell{
-  width: 5px;
-  height: auto;
+  width: 8px;
+  height: 50px;
 }
 .dot-cell{
-  width: 5px;
-  height: 5px;
-  background-color: red;
+  width: 8px;
+  height: 8px;
 }
