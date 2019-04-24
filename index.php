@@ -13,10 +13,46 @@
       <form action="#" method="post" name="casino_form">
         <div class="d-flex flex-row">
           <div class="p-2">
-            <table>
+            <table class="casino-table">
               <tbody>
                 <tr>
-                  <td>dfsd</td>
+                  <td class="left-additional  additional-cell">
+                    <div onclick="makeBet(this)">1-18</div>
+                  </td>
+                  <td class="left-additional  additional-cell" rowspan="2">
+                    <div onclick="makeBet(this)">1 st Dozen</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left-additional  additional-cell">
+                    <div onclick="makeBet(this)">EVEN</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left-additional left-black  additional-cell">
+                    <div onclick="makeBet(this)">Black</div>
+                  </td>
+                  <td class="left-additional  additional-cell" rowspan="2">
+                    <div onclick="makeBet(this)">2 nd Dozen</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left-additional left-red  additional-cell">
+                    <div onclick="makeBet(this)">Red</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left-additional  additional-cell">
+                    <div onclick="makeBet(this)">ODD</div>
+                  </td>
+                  <td class="left-additional  additional-cell" rowspan="2">
+                    <div onclick="makeBet(this)">3 rd Dozen</div>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="left-additional  additional-cell">
+                    <div onclick="makeBet(this)">19-36</div>
+                  </td>
                 </tr>
               </tbody>
             </table>
@@ -35,9 +71,24 @@
 
              </tbody>
            </table>
-
+           <table class="casino-table additional-cell">
+             <tbody>
+               <tr>
+                 <td class="additional-cell">
+                   <div class="bottom-cell" onclick="makeBet(this)">2 to 1</div>
+                 </td>
+                 <td class="additional-cell">
+                   <div class="bottom-cell" onclick="makeBet(this)">2 to 1</div>
+                 </td>
+                 <td class="additional-cell">
+                   <div class="bottom-cell" onclick="makeBet(this)">2 to 1</div>
+                 </td>
+               </tr>
+             </tbody>
+           </table>
          </div>
        </div>
+       <input type="text" name="bet" id="bet" class="form-control">
        <button type="button" id="reg_user" class="btn btn-success mt-3">Make bet</button>
      </form>
    </div>

@@ -8,13 +8,13 @@ for($j = 1; $j < 24; $j++){ // don't touch last table line
         $cell_number += 1;
 
         echo "<td>
-          <div onclick='makeBet(this)' class=\"number-cell\" id='cell$cell_number'>
+          <div onclick='makeBet(this)' class=\"number-cell\" id='straight $cell_number'>
           $cell_number
           </div>
         </td>";
       } else {
         echo "<td>
-          <div onclick='makeBet(this)' class=\"w-line-cell line-cell\" id='cell$j$i'>
+          <div onclick='makeBet(this)' class=\"w-line-cell line-cell\" id='street ($j * $i)'>
           </div>
         </td>";
       }
@@ -23,16 +23,16 @@ for($j = 1; $j < 24; $j++){ // don't touch last table line
     echo "<tr>";
     for($i = 1; $i < 4; $i++){
       echo "<td>
-        <div onclick='makeBet(this)' class=\"dot-cell line-cell\" id='cell$j$i'>
+        <div onclick='makeBet(this)' class=\"dot-cell line-cell\" id='corner ($j * $i)'>
         </div>
       </td>";
       echo "<td>
-        <div onclick='makeBet(this)' class=\"h-line-cell line-cell\" id='cell$j$i'>
+        <div onclick='makeBet(this)' class=\"h-line-cell line-cell\" id='street ($j * $i)'>
         </div>
       </td>";
     }
     echo "<td>
-      <div onclick='makeBet(this)' class=\"dot-cell line-cell\" id='cell$j$i'>
+      <div onclick='makeBet(this)' class=\"dot-cell line-cell\" id='corner ($j * $i)'>
       </div>
     </td>";
     echo "</td>";

@@ -7,19 +7,19 @@
       <?php
       // if we logged than show the button
         if(!empty($_COOKIE['login']))
-          echo '<a class="p-2 text-dark" href="/article.php">Add article</a>';
+          echo '<a class="p-2 text-dark" href="#">do smth if register</a>';
       ?>
     </nav>
     <?php
       //end of the statement right after form
       if(empty($_COOKIE['login'])):
     ?>
-    <a class="btn btn-outline-primary mr-2 mb-2" href="auth.php">Sign in</a>
-    <a class="btn btn-outline-primary mb-2" href="reg">Sign up</a>
+    <a class="btn btn-outline-primary mr-2 mb-2" href="authorization_form.php">Sign in</a>
+    <a class="btn btn-outline-primary mb-2" href="registration_form.php">Sign up</a>
     <?php
       else:
     ?>
-    <a class="btn btn-outline-primary mb-2" href="auth.php">User cabinet</a>
+    <a class="btn btn-outline-primary mb-2" href="authorization_form.php">User cabinet</a>
     <?php
       endif;
     ?>

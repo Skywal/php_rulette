@@ -43,3 +43,37 @@ table div{
   width: 8px;
   height: 8px;
 }
+/****************************************************
+****  All aditional tables
+****************************************************/
+.additional-cell{
+  border-style: solid;
+  border-color: red;
+  border-width: 8px;
+  color: white;
+}
+/*
+****************************************************
+****  left side of the game table
+****************************************************
+*/
+.left-additional{
+  writing-mode: vertical-rl;
+  width: 50px;
+  height: 122px;
+}
+.left-black{
+  background-color: black;
+  color: white;
+}
+.left-red{
+  background-color: red;
+  color: black;
+}
+/****************************************************
+****  Bottom side of the table
+****************************************************/
+.bottom-cell{
+  width: 51px;
+  height: 30px;
+}
