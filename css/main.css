@@ -7,73 +7,11 @@
       margin: 20px 0;
     }
 }
-
-.casino-table  {
-  /* width: 200px; */
-  background-color: green;
+#error_block {
+  display: none;
 }
-.casino-table td{
-  /* border-style: solid;
-  border-color: white;
-  border-width: thin; */
-  align: center;
-}
-table div{
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.number-cell{
-  width: 50px;
-  height: 50px;
-}
-.line-cell{
-  background-color: red;
-}
-.h-line-cell{
-  height: 8px;
-  width: 50px;
-}
-.w-line-cell{
-  width: 8px;
-  height: 50px;
-}
-.dot-cell{
-  width: 8px;
-  height: 8px;
-}
-/****************************************************
-****  All aditional tables
-****************************************************/
-.additional-cell{
+.game-field{
   border-style: solid;
-  border-color: red;
-  border-width: 8px;
-  color: white;
-}
-/*
-****************************************************
-****  left side of the game table
-****************************************************
-*/
-.left-additional{
-  writing-mode: vertical-rl;
-  width: 50px;
-  height: 122px;
-}
-.left-black{
-  background-color: black;
-  color: white;
-}
-.left-red{
-  background-color: red;
-  color: black;
-}
-/****************************************************
-****  Bottom side of the table
-****************************************************/
-.bottom-cell{
-  width: 51px;
-  height: 30px;
+  border-width: 1px;
+  border-color: black;
 }
