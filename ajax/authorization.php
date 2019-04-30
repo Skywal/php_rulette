@@ -35,7 +35,7 @@
 
   if(is_object($user)){
     setcookie('login', $login, time() + 3600 * 24 * 30, "/");  // save cookie for this user for one month for whole web-site "/"
-    setcookie('user_money', $user->money, time() + 3600 * 24 * 30, "/");
+    // setcookie('user_money', $user->money, time() + 3600 * 24 * 30, "/");
     echo 'Done';
   } else {
     echo 'Something is going wrong. Pleace check your login and password.';

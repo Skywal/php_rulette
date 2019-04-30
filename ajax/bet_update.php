@@ -25,5 +25,9 @@
   $query = $pdo->prepare($sql);
   $query->execute([$_COOKIE['login'], $bet_money, $betStr, $date]);
 
+  $sql = 'UPDATE `users` SET `money`=`money`- :money WHERE `login` = :login';
+  $query = $pdo->prepare($sql);
+  $query->execute(['money' => $bet_money, 'login' => $_COOKIE['login']]);
+
   echo 'Done';
 ?>

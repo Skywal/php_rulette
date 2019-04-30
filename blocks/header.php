@@ -3,8 +3,10 @@
     <h5 class="my-0 mr-md-auto font-weight-normal">Rulette</h5>
     <nav class="my-2 my-md-0 mr-md-3">
       <?php
-        if(!empty($_COOKIE['user_money']))
-          echo "<a class='p-2 text-dark' disabled>Your money: " .$_COOKIE['user_money']."</a>";
+        // if(!empty($_COOKIE['user_money'])){
+        //   update_user_money();
+        // }
+        //   echo "<a class='p-2 text-dark' disabled>Your money: " .$_COOKIE['user_money']."</a>";
       ?>
       <a class="p-2 text-dark" href="/">Main page</a>
       <a class="p-2 text-dark" href="/contacts.php">Contacts</a>
