@@ -45,7 +45,19 @@
        </div>
 
        <div id="stack-trace"></div>
-       Hello!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+       <table>
+         <thead>
+           <tr>
+             <td>Login</td>
+             <td>Money</td>
+             <td>Bet</td>
+             <td>Bet time</td>
+           </tr>
+         </thead>
+         <tbody id="gamers">
+
+         </tbody>
+       </table>
      </div>
    </div>
   </div>
@@ -59,7 +71,6 @@
     function Timer() {
        dt=new Date()
        document.getElementById('rt-clock').innerHTML=dt.getHours()+":"+dt.getMinutes()+":"+dt.getSeconds();
-       setTimeout("Timer()",1000);
     }
     function sendTimeToServer(){
       var dtSendHours = dt.getHours();
@@ -127,12 +138,29 @@
           $('#user-money').text(data);
         }
       });
-      setTimeout("updateUserMoney()",1000);
     }
+    function updateGameTable(){
+      $.ajax({
+        url: '/ajax/show_game.php',
+        type: 'POST',
+        cache: false,
+        dataType: 'html',
+        success: function(data) {
+          document.getElementById('gamers').innerHTML= data;
+        }
+      });
+    }
+    function updateInOneSec(){
+      Timer();
+      updateUserMoney();
+      updateGameTable();
+      
+      setTimeout("updateInOneSec()",1000);
+    }
+
     //time update
-    Timer();
+    updateInOneSec();
     sendTimeToServer();
-    updateUserMoney();
   </script>
 </body>
 </html>
